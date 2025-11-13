@@ -1,0 +1,152 @@
+:root {
+  --primary: #1B5E20;
+  --secondary: #388E3C;
+  --light: #C8E6C9;
+  --very-light: #E8F8E6;
+  --dark: #0D2817;
+}
+
+.not-authorized-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--very-light) 0%, var(--light) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.not-authorized-card {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 10px 40px rgba(27, 94, 32, 0.15);
+  border: 2px solid var(--light);
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.not-authorized-card h1 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.not-authorized-card p {
+  color: #666;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-login,
+.btn-back {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-login {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(27, 94, 32, 0.3);
+}
+
+.btn-back {
+  background: var(--very-light);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-back:hover {
+  background: white;
+  box-shadow: 0 4px 12px rgba(27, 94, 32, 0.1);
+}
+
+.info-box {
+  background: var(--very-light);
+  border-left: 4px solid var(--secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.info-box h3 {
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.info-box ol {
+  padding-left: 1.5rem;
+  color: #666;
+}
+
+.info-box li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.info-box strong {
+  color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+  .not-authorized-container {
+    padding: 1rem;
+  }
+
+  .not-authorized-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .not-authorized-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .btn-login,
+  .btn-back {
+    width: 100%;
+  }
+}
