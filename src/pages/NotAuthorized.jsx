@@ -14,7 +14,7 @@ export default function NotAuthorized() {
         
         <div className="action-buttons">
           <a 
-            href="https://ifn-fronted-web.vercel.app/login" 
+            href="https://react-vercel-deploy-brown.vercel.app/login" 
             className="btn-login"
           >
             🔑 Ir a Iniciar Sesión

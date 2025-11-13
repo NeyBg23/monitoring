@@ -23,7 +23,7 @@ export default function Login() {
         </div>
 
         <a 
-          href="https://ifn-fronted-web.vercel.app/login"
+          href="https://react-vercel-deploy-brown.vercel.app/login"
           className="btn-ir-login"
         >
           🔑 Ir a Iniciar Sesión
